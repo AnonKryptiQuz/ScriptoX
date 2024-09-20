@@ -1,6 +1,6 @@
 # ScriptoX: SVG & PDF Creator with Embedded JavaScript
 
-**ScriptoX** combines two powerful functionalities: creating SVG and PDF files with embedded JavaScript code. Designed for educational and testing purposes, this suite enables users to generate files that demonstrate how embedded scripts can operate within SVG and PDF documents. It's especially useful for security researchers and developers looking to understand the implications of embedded scripts.
+**ScriptoX** combines two powerful functionalities: creating SVG and PDF files with embedded JavaScript code. Designed for educational and testing purposes, this tool enables the users to generate files demonstrating how embedded scripts can operate within SVG and PDF documents. It's useful for security researchers and developers looking to understand the implications of embedded scripts. (Not an XSS tool)
 
 ## **Features**
 
