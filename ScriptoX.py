@@ -116,16 +116,16 @@ def show_menu():
 def main():
     signal.signal(signal.SIGINT, handle_interrupt)
     
-    clear_screen()  # Clear the screen before checking for requirements
+    clear_screen()
     print(f"{Fore.YELLOW}[i] Checking for required packages...\n")
     
     required_packages = load_config()
     check_and_install_packages(required_packages)
 
-    time.sleep(3)  # Wait for 3 seconds before showing the menu
+    time.sleep(3)
     
     while True:
-        clear_screen()  # Clear the screen before displaying the menu
+        clear_screen()
         print(f"{Fore.GREEN}Welcome to Scripto Tool Suite - AnonKryptiQuz\n")
         show_menu()
         option = prompt(HTML("<ansicyan>\n[?]</ansicyan> Choose an option: "))
@@ -134,13 +134,13 @@ def main():
             filename = prompt(HTML(f"<ansicyan>[?]</ansicyan> Enter the name for the SVG file (press Enter for default: <ansicyan>ScriptoSVG.svg</ansicyan>): ")) or "ScriptoSVG.svg"
             payload = prompt(HTML(f"<ansicyan>[?]</ansicyan> Enter the payload to embed in the SVG (press Enter for default: <ansicyan>alert('AnonKryptiQuz');</ansicyan>): ")) or "alert('AnonKryptiQuz');"
             create_ScriptoSVG_file(filename, payload)
-            break  # Exit after creating the file
+            break
 
         elif option == "2":
             filename = prompt(HTML(f"<ansicyan>[?]</ansicyan> Enter the name for the PDF file (press Enter for default: <ansicyan>ScriptoPDF.pdf</ansicyan>): ")) or "ScriptoPDF.pdf"
             payload = prompt(HTML(f"<ansicyan>[?]</ansicyan> Enter the payload to embed in the PDF (press Enter for default: <ansicyan>app.alert('AnonKryptiQuz');</ansicyan>): ")) or "app.alert('AnonKryptiQuz');"
             create_ScriptoPDF_pdf(filename, payload)
-            break  # Exit after creating the file
+            break
 
         elif option == "0":
             print(f"{Fore.GREEN}[+] Exiting the program. Goodbye!")
@@ -148,7 +148,7 @@ def main():
 
         else:
             print(f"{Fore.RED}[!] Wrong option selected. Press Enter to try again.")
-            prompt()  # Wait for user to press Enter
+            prompt()
 
 if __name__ == "__main__":
     try:
