@@ -49,6 +49,10 @@
 
 3. **The generated file will be saved with the specified filename.**
 
+## **Disclaimer**
+
+- **Educational Purposes Only**: ScriptoX is intended for educational and research use. The tool should not be used for illegal or malicious activities. It is the user’s responsibility to ensure compliance with local laws and regulations.
+
 ## **Author**
 
 **Created by:** [AnonKryptiQuz](https://AnonKryptiQuz.github.io/)
